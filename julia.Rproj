@@ -18,4 +18,8 @@ StripTrailingWhitespace: Yes
 
 BuildType: Makefile
 
+PythonType: virtualenv
+PythonVersion: 3.11.11
+PythonPath: .venv/bin/python
+
 SpellingDictionary: en_US
