@@ -135,6 +135,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+renv
 
 # Spyder project settings
 .spyderproject
@@ -176,3 +177,8 @@ cython_debug/
 # Workspace
 services/
 sandbox/
+
+# R environment
+.Rhistory
+.RData
+.Rproj.user
