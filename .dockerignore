@@ -1,0 +1,32 @@
+# Project files
+LICENSE
+README.md
+
+# Project directories
+dist/
+docs/
+notebooks/
+sandbox/
+tests/
+
+# build files
+pyproject.toml
+uv.lock
+requirements.txt
+
+# config files
+config.ini
+ruff.toml
+
+# Git
+.git/
+
+# Virtualenv
+.venv/
+
+# Python 
+**/__pycache__/
+**/.pytest_cache/
+**/.ruff_cache/
+*.py[cod]
+*$py.class

@@ -1,0 +1,47 @@
+[project]
+name = "julia"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "rlopc4ds",email = "rlopc4ds@gmail.com"},
+]
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "julia-api>=0.1.0",
+    "julia-common>=0.1.0",
+    "julia-log>=0.1.0",
+    "pydantic>=2.10.6",
+    "python-dotenv>=1.0.1",
+]
+
+[tool.uv.sources]
+julia-api = {workspace = true}
+julia-common = {workspace = true}
+julia-log = {workspace = true}
+
+[tool.uv.workspace]
+members = ["packages/*"]
+exclude = [
+    "services/*",
+    "sandbox/*",
+    "ui/*",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+    "pytest>=8.3.4",
+    "pytest-mock>=3.14.0",
+    "ruff>=0.9.4",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+    "julia",
+    "packages/*/src",
+]
+testpaths = [
+    "tests",
+    "packages/*/tests",
+]
