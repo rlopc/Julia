@@ -175,5 +175,4 @@ cython_debug/
 
 # Workspace
 services/
-ui/
 sandbox/
