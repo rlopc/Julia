@@ -3,7 +3,7 @@
     "python.analysis.autoSearchPaths": true,
     "python.analysis.extraPaths": [
         "${workspaceFolder}/julia",
-        "${workspaceFolder}/packages/*/src",
+        "${workspaceFolder}/packages/python/*/src",
     ],
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
     "python.envFile": "${workspaceFolder}/.env",

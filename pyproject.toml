@@ -21,8 +21,9 @@ julia-common = {workspace = true}
 julia-log = {workspace = true}
 
 [tool.uv.workspace]
-members = ["packages/*"]
+members = ["packages/python/*"]
 exclude = [
+    "packages/r/*",
     "services/*",
     "sandbox/*",
     "ui/*",
@@ -39,9 +40,9 @@ dev = [
 [tool.pytest.ini_options]
 pythonpath = [
     "julia",
-    "packages/*/src",
+    "packages/python/*/src",
 ]
 testpaths = [
     "tests",
-    "packages/*/tests",
+    "packages/python/*/tests",
 ]
