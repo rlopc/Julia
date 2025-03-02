@@ -17,4 +17,23 @@
     "python.testing.pytestArgs": [
         "."
     ],
+    // Pylance settings
+    "python.analysis.ignore": [
+        "**/__pycache__",
+        "**/build",
+        "**/node_modules",
+        ".git",
+        ".Rproj.user/**",
+        ".venv/**",
+        "packages/r/**",
+        "renv/**",
+    ],
+    // Azure Functions settings
+    "azureFunctions.deploySubpath": ".",
+    "azureFunctions.projectLanguage": "Python",
+    "azureFunctions.projectLanguageModel": 2,
+    "azureFunctions.projectRuntime": "~4",
+    "azureFunctions.pythonVenv": ".venv",
+    "azureFunctions.scmDoBuildDuringDeployment": true,
+    "debug.internalConsoleOptions": "neverOpen",
 }
