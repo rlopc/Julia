@@ -7,8 +7,14 @@
             "request": "launch",
             "module": "uvicorn",
             "args": [
-                "api:app",
-                "--reload"
+                "api.main:app",
+                "--port",
+                "8000",
+                "--ssl-keyfile",
+                "key.pem",
+                "--ssl-certfile",
+                "cert.pem",
+                "--reload",
             ],
             "jinja": true
         }
